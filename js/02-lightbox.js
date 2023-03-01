@@ -18,7 +18,7 @@ const items = galleryItems
 const galleryBox = document.querySelector(".gallery");
 galleryBox.innerHTML = items;
 
-var lightbox = new SimpleLightbox(".gallery a", {
+const lightbox = new SimpleLightbox(".gallery a", {
   caption: true,
   captionType: "attr",
   captionsData: "alt",
