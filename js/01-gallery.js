@@ -7,12 +7,14 @@ const items = galleryItems
     <a class="gallery__link" href="${item.original}" >
     <img
       class="gallery__image"
+      loading="lazy"
       src="${item.preview}"
       data-source="${item.original}"
       alt="${item.description}"
     />
   </a>
   </div>`;
+  
   })
   .join("");
 
@@ -36,3 +38,6 @@ function onLinkClick(event) {
 }
 
 console.log(galleryItems);
+
+
+
